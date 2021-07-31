@@ -7,11 +7,10 @@ print(number)
 name = ('Lyubov')
 print(name)
 
-name = input('What is your name? ' )
-print('Hi', name)
-
 city = input('Where are you from? ')
 print("I'm from", city, 'too')
+print(type(city))
 
 age = int(input('How old are you? '))
 print(age)
+print(type(age))

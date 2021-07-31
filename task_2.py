@@ -14,7 +14,7 @@ time = time % 3600
 minutes = time // 60
 print('Seconds value in minutes = ', minutes)
 
-# получние секунд
+# получение секунд
 seconds = time % 3600
 
 print('Time: ', "%02d:%02d:%02d" % (hours, minutes, seconds))

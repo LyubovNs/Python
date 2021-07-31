@@ -17,5 +17,3 @@ while number >= 1:
     else:
         print("Максимальное цифра ", maxnumb)
         break
-
-
