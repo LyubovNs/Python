@@ -3,7 +3,7 @@
 # При нечетном количестве элементов последний сохранить на своем месте.
 # Для заполнения списка элементов необходимо использовать функцию input().
 
-elements = input("Введите цифры без пробелов: ").split()
+elements = input("Введите цифры с пробелами: ").split(' ')
 for i in range(0, len(elements) - 1, 2):
     elements[i], elements[i+1] = elements[i+1], elements[i]
 print(elements)
