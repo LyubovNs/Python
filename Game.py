@@ -10,15 +10,14 @@ import random
 print('Загадайте число от 0 до 100 и запомните его')
 min = 1
 max = 100
+result = None
 
-while True:
+while result != '=':
     number = random.randint(min, max)
     print(f'Загаданное число: {number}?')
-    result = input('> < =')
-    if result == '=':
-        print('Победа')
-        break
-    elif result == '>':
+    result = input('> < = ')
+    if result == '>':
         min = number + 1
     else:
         max = number - 1
+print('Победа')
