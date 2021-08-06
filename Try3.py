@@ -31,3 +31,4 @@ for key in months:
        print(date_list[1])
 
 date = print('{} {} {} года'.format(date_list[0], date_list[1], year))
+
