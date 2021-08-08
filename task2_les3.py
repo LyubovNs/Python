@@ -8,6 +8,7 @@ def data(**kwargs):
 
 print(data(name = 'Люба', surname = 'Новикова', year = 1995, city = 'Нск', email = '@@', phone = 8800))
 
+
 # в столбик
 def data2(**kwargs):
     for k, v in kwargs.items():
