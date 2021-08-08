@@ -7,7 +7,8 @@
 # Второй — более сложная реализация без оператора **, предусматривающая использование цикла.
 
 def my_func(x, y):
-    result = x ** -y
+    y = abs(y)
+    result = x ** y
     return  result
 
-print(my_func(5, 2))
+print(my_func(5, -2))
