@@ -7,8 +7,13 @@
 # Второй — более сложная реализация без оператора **, предусматривающая использование цикла.
 
 def my_func(x, y):
-    y = abs(y)
-    result = x ** y
-    return  result
+      if y != abs(y):
+       result = x ** y
+       return  result
+      elif x != int(x):
+       print('x должно быть целым положительным числом числом!')
+      else:
+       print('y должно быть отрицательным числом числом!')
 
-print(my_func(5, -2))
+
+print(my_func(580, 2))
