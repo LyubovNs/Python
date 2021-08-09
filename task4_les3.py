@@ -6,24 +6,19 @@
 # Первый — возведение в степень с помощью оператора **.
 # Второй — более сложная реализация без оператора **, предусматривающая использование цикла.
 
-# def my_func(x, y):
-#       if y != abs(y):
-#        result = x ** y
-#        return  result
-#       elif x != int(x):
-#        print('x должно быть целым положительным числом числом!')
-#       else:
-#        print('y должно быть отрицательным числом числом!')
-#
-# print(my_func(0.2, -3))
+def my_func(x, y):
+      if y < 0 and x > 0:
+       result = x ** y
+       return  result
+      else:
+       print('x > 0, y < 0')
 
-import numbers
+print(my_func(6, 13))
+print(my_func(10, -3))
+
 
 def my_func(x, y):
-        if isinstance(x, numbers.Number):
-         result = x ** y
-         return result
-        else:
-         print('x > 0, y < 0')
+    result = 1 / x ** abs(y)  if x > 0 and y < 0 else print('x > 0, y < 0')
+    return result
 
-print(my_func(-12.4, -5))
+print(my_func(2, -5))
