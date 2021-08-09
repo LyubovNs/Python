@@ -4,26 +4,31 @@
 # Каждое слово состоит из латинских букв в нижнем регистре. Сделать вывод исходной строки, но каждое слово должно
 # начинаться с заглавной буквы.
 # Необходимо использовать написанную ранее функцию int_func().
-import capitalize as capitalize
 
-
-# def int_func(text):
-#       if text in text.lower():
-#        return(text.capitalize())
-#       else:
-#           print('Все буквы должны быть маленькие')
-#
-# print(int_func('lyubov'))
-
+import re
 
 def int_func(text):
-    if text in text.lower():
-     str = (('{}'.format(text))).split(',')
-     for i in str:
-        return text.capitalize()
-    else:
-        print('Все буквы должны быть маленькие')
+      if text.islower() and re.search(r'[^а-я]', text):
+       return(text.capitalize())
+      else:
+          print('Должны быть латинские буквы в нижнем регистре')
 
-print(int_func('privet lyubov'))
+print(int_func('Fунction'))
+print(int_func('function'))
+
+
+# import re
+#
+# def int_func(text):
+#     if text.islower() and re.search(r'[^a-z]', text):
+#      str = (('{}'.format(text))).split(',')
+#      for i in str:
+#         return text.capitalize()
+#     else:
+#         print('Должны быть латинские буквы в нижнем регистре')
+#
+# print(int_func('privet PриvЕт'))
+# print(int_func('privet прive'))
+
 
 
