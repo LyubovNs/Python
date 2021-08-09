@@ -6,5 +6,12 @@
 # Если специальный символ введен после нескольких чисел,
 # то вначале нужно добавить сумму этих чисел к полученной ранее сумме и после этого завершить программу.
 
-str_user = input('Введите строку числа, разделяя их пробелом: ')
-print(str_user)
+while True:
+ new_str = []
+ str_user = list(input('Введите строку чисел, разделяя их пробелом: ').split())
+ for i in str_user:
+  map(lambda i: int, str_user)
+  new_str.append(i)
+ print(sum(new_str))
+ if i == 'q':
+   break
