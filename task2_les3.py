@@ -16,3 +16,4 @@ def data2(**kwargs):
 
 data2(name = 'Люба', surname = 'Новикова', year = 1995, city = 'Нск', email = '@@', phone = 8800)
 
+
