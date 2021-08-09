@@ -4,3 +4,16 @@
 # Каждое слово состоит из латинских букв в нижнем регистре. Сделать вывод исходной строки, но каждое слово должно
 # начинаться с заглавной буквы.
 # Необходимо использовать написанную ранее функцию int_func().
+import capitalize as capitalize
+
+
+# def int_func(text):
+#     return(text.capitalize())
+#
+# print(int_func('lyuboV'))
+
+def int_func(text):
+    return (('{}'.format(text))).split(',')
+
+print(int_func('prIvet lyuboV'))
+
