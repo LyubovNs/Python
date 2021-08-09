@@ -8,12 +8,22 @@ import capitalize as capitalize
 
 
 # def int_func(text):
-#     return(text.capitalize())
+#       if text in text.lower():
+#        return(text.capitalize())
+#       else:
+#           print('Все буквы должны быть маленькие')
 #
-# print(int_func('lyuboV'))
+# print(int_func('lyubov'))
+
 
 def int_func(text):
-    return (('{}'.format(text))).split(',')
+    if text in text.lower():
+     str = (('{}'.format(text))).split(',')
+     for i in str:
+        return text.capitalize()
+    else:
+        print('Все буквы должны быть маленькие')
 
-print(int_func('prIvet lyuboV'))
+print(int_func('privet lyubov'))
+
 
