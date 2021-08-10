@@ -5,6 +5,24 @@
 # начинаться с заглавной буквы.
 # Необходимо использовать написанную ранее функцию int_func().
 
+
+def int_func(text):
+    for letter in text:
+        ns = 0
+        for n in letter:
+          if n.islower() and 97 <= ord(n) <= 122:
+            ns += 1
+    print(text.capitalize() if ns == len(letter) else 'Должны быть маленькие латинские буквы')
+
+
+int_func('siпапhk ij PIJ j')
+int_func('privet privet')
+
+
+
+
+
+
 # def int_func(text):
 #     for letter in text:
 #         if letter.isupper() or ord(letter) <= 97 or ord(letter) >= 122:
@@ -17,30 +35,16 @@
 # int_func('fyn')
 
 
-def int_func(text):
-    for letter in text:
-        if letter.islower() and 97 <= ord(letter) <= 122:
-            continue
-        else:
-            print('Должны быть маленькие латинские буквы')
-            break
-    print(text.capitalize())
-
-int_func('fyз')
-
-
 
 
 # def int_func(text):
-#     if text.islower() and re.search(r'[^a-z]', text):
+#     if text.islower() and 97 <= ord(n) <= 122:
 #      str = (('{}'.format(text))).split(',')
 #      for i in str:
 #         return text.capitalize()
 #     else:
 #         print('Должны быть латинские буквы в нижнем регистре')
 #
-# print(int_func('privet PриvЕт'))
-# print(int_func('privet прive'))
-
+# print(int_func('privet privet'))
 
 
