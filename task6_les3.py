@@ -23,7 +23,6 @@ int_func('privet privet')
 
 
 
-
 # def int_func(text):
 #     for letter in text:
 #         if letter.isupper() or ord(letter) <= 97 or ord(letter) >= 122:
