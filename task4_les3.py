@@ -6,15 +6,15 @@
 # Первый — возведение в степень с помощью оператора **.
 # Второй — более сложная реализация без оператора **, предусматривающая использование цикла.
 
-# def my_func(x, y):
-#       if y < 0 or x > 0:
-#        result = x ** y
-#        return  result
-#       else:
-#        print('x > 0, y < 0')
-#
-# print(my_func(6, 13))
-# print(my_func(10, -3))
+def my_func(x, y):
+      if y < 0 or x > 0:
+       result = x ** y
+       return  result
+      else:
+       print('x > 0, y < 0')
+
+print(my_func(6, 13))
+print(my_func(10, -3))
 
 
 def my_func(x, y):
@@ -29,4 +29,4 @@ def my_func(x, y):
     except ValueError:
         return 'Необходимо ввести числа'
 
-print(my_func(20, 60))
+print(my_func(20, -60))
