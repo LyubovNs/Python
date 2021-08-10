@@ -15,10 +15,8 @@ def int_func(text):
     print(text.capitalize() if ns == len(letter) else 'Должны быть маленькие латинские буквы')
 
 
-int_func('siпапhk ij PIJ j')
+int_func('siпапhk ij PIJ j тт')
 int_func('privet privet')
-
-
 
 
 
@@ -35,8 +33,6 @@ int_func('privet privet')
 # int_func('fyn')
 
 
-
-
 # def int_func(text):
 #     if text.islower() and 97 <= ord(n) <= 122:
 #      str = (('{}'.format(text))).split(',')
@@ -46,5 +42,3 @@ int_func('privet privet')
 #         print('Должны быть латинские буквы в нижнем регистре')
 #
 # print(int_func('privet privet'))
-
-
