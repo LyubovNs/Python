@@ -5,20 +5,32 @@
 # начинаться с заглавной буквы.
 # Необходимо использовать написанную ранее функцию int_func().
 
-import re
+# def int_func(text):
+#     for letter in text:
+#         if letter.isupper() or ord(letter) <= 97 or ord(letter) >= 122:
+#             print('Должны быть маленькие латинские буквы')
+#             break
+#         else:
+#              continue
+#              print(text.capitalize())
+#
+# int_func('fyn')
+
 
 def int_func(text):
-      if text.islower() and re.search(r'[^а-я]', text):
-       return(text.capitalize())
-      else:
-          print('Должны быть латинские буквы в нижнем регистре')
+    for letter in text:
+        if letter.islower() and 97 <= ord(letter) <= 122:
+            continue
+        else:
+            print('Должны быть маленькие латинские буквы')
+            break
+    print(text.capitalize())
 
-print(int_func('Fунction'))
-print(int_func('function'))
+int_func('fyз')
 
 
-# import re
-#
+
+
 # def int_func(text):
 #     if text.islower() and re.search(r'[^a-z]', text):
 #      str = (('{}'.format(text))).split(',')
