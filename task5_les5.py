@@ -8,3 +8,4 @@ with open('file_5.txt', 'w+') as file_obj:
     my_numb = line.split()
 
     print(sum(map(int, my_numb)))
+    
